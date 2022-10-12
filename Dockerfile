@@ -9,7 +9,7 @@ WORKDIR $GOPATH/src/github.com/golang-ex
 
 COPY . .
 
-RUN go build -o example-app ./opentelemetry-sample-app/hello_opentelemetry.go
+RUN go build -o example-app ./hello.go
 
 # RUN STAGE
 FROM registry.access.redhat.com/ubi8/ubi-minimal:8.4
